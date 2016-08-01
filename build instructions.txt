@@ -1,0 +1,13 @@
+### Ubuntu build machine ###
+### Uboot:
+
+1.	Use uboot from "ti-sdk-am335x-evm-07.00.00.00" sdk.
+2.	Extract "ec3_uboot.tar.gz" in "u-boot-2013.10-ti2013.12.01" directory to install our board config files.
+3.	Compile:
+			CROSS_COMPILE=arm-linux-gnueabihf-
+			ARCH=arm
+			export CROSS_COMPILE
+			export ARCH
+			make am335x_ec3
+
+
